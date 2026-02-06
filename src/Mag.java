@@ -6,10 +6,8 @@ public class Mag extends ClasseBaseEntitat {
         this.mana = mana;
     }
 
-    public int getMana() { return mana; }
-    public void setMana(int m) { this.mana = m; }
-
+    @Override
     public void atacar() {
-        System.out.println(getNom() + " llança una bola de foc!");
+        System.out.println(getNom() + " llança una bola de foc (Mana: " + mana + ")!");
     }
 }

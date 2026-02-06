@@ -6,15 +6,14 @@ public class Guerrer extends ClasseBaseEntitat {
         this.resistencia = resistencia;
     }
 
-    public int getResistencia() { return resistencia; }
-    public void setResistencia(int r) { this.resistencia = r; }
-
+    @Override
     public void atacar() {
-        System.out.println(getNom() + " fot un cop d'espasa!");
+        System.out.println(getNom() + " fot un cop d'espasa amb força física!");
     }
 
+    @Override
     public void rebreDany(int quantitat) {
-        // Restem la resistencia al dany
+        // Apliquem la resistència abans de treure vida
         int danyReal = quantitat - resistencia;
         if (danyReal < 0) danyReal = 0;
         super.rebreDany(danyReal);
