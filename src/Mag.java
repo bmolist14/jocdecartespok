@@ -8,6 +8,6 @@ public class Mag extends ClasseBaseEntitat {
 
     @Override
     public void atacar() {
-        System.out.println(getNom() + " llança una bola de foc (Mana: " + mana + ")!");
+        System.out.println(getNom() + " llança un encanteri màgic!");
     }
 }
