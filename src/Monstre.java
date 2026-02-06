@@ -5,6 +5,6 @@ public class Monstre extends ClasseBaseEntitat {
 
     @Override
     public void atacar() {
-        System.out.println(getNom() + " mossega salvatgement!");
+        System.out.println(getNom() + " ataca salvatgement!");
     }
 }
